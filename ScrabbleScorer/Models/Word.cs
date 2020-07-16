@@ -12,13 +12,17 @@ namespace ScrabbleScorer.Models
       Input = input;
     }
     // public string Description { get; set; }
-    public string[] StringToLetterArray()
+    public string[] StringToLetterArray(string input)
     {
-      string[] letterArray = { };
+      string[] letterArray = input.Split(",");
       return letterArray;
 
-      // Console.WriteLine("letterArray");// properties, methods, etc. will go here.
-      // return String;
+      // char[] letterArray = input.ToCharArray();
+      // return letterArray;
+    }
+    public int CheckForScore(string[] letterArray)
+    {
+
     }
   }
 }

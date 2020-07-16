@@ -32,7 +32,7 @@ namespace ScrabbleScorer.Tests
       string input = "apple";
       Word newWord = new Word(input);
       string[] testArray = { "a", "p", "p", "l", "e" };
-      string[] letterArray = newWord.StringToLetterArray();
+      string[] letterArray = newWord.StringToLetterArray("test");
       Assert.AreEqual(testArray.GetType(), letterArray.GetType());
       // string input = "apple";
       // Word newWord = new Word(input);  // String.Split(",");
@@ -40,6 +40,16 @@ namespace ScrabbleScorer.Tests
       // string[] letterArray = output.StringToLetterArray();
       // string[] appleArray = { "a", "p", "p", "l", "e" };
       // Assert.AreEqual(appleArray, letterArray);
+    }
+    [TestMethod]
+    public void CheckForScore_CharacterValuesAreSummed_True()
+    {
+      Word newWord = new Word("apple");
+      string[] lettersSeparated = newWord.StringToLetterArray();
+      int testScore = 8;
+      int score = newWord.CheckForScore();
+      Assert.AreEqual()
+
     }
   }
 }

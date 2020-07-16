@@ -9,7 +9,11 @@ namespace ScrabbleScorer
   {
     public static void Main()
     {
-      Console.WriteLine("Hello World");
+      Console.WriteLine("Enter a word to discover its Scrabble score: ");
+      string input = Console.ReadLine();
+
+      // int output = lettersScoreSum;
+      // Console.WriteLine(output);
     }
   }
 }
