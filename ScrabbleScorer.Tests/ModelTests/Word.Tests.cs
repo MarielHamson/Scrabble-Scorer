@@ -46,10 +46,9 @@ namespace ScrabbleScorer.Tests
     {
       Word newWord = new Word("apple");
       string[] lettersSeparated = newWord.StringToLetterArray();
-      int testScore = 8;
+      int testScore = 9;
       int score = newWord.CheckForScore();
-      Assert.AreEqual()
-
+      Assert.AreEqual(testScore, score);
     }
   }
 }
