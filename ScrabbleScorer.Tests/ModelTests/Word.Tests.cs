@@ -26,5 +26,20 @@ namespace ScrabbleScorer.Tests
       string output = newWord.Input;
       Assert.AreEqual(output, input);
     }
+    [TestMethod]
+    public void StringToLetterArray_WordReceivedIsSplitIntoArray_True()
+    {
+      string input = "apple";
+      Word newWord = new Word(input);
+      string[] testArray = { "a", "p", "p", "l", "e" };
+      string[] letterArray = newWord.StringToLetterArray();
+      Assert.AreEqual(testArray.GetType(), letterArray.GetType());
+      // string input = "apple";
+      // Word newWord = new Word(input);  // String.Split(",");
+      // string output = newWord.Input;
+      // string[] letterArray = output.StringToLetterArray();
+      // string[] appleArray = { "a", "p", "p", "l", "e" };
+      // Assert.AreEqual(appleArray, letterArray);
+    }
   }
 }
