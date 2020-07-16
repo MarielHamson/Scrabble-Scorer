@@ -14,8 +14,8 @@ namespace ScrabbleScorer.Models
     // public string Description { get; set; }
     public string[] StringToLetterArray()
     {
-      // string[] letterArray = { };
-      // return letterArray;
+      string[] letterArray = { };
+      return letterArray;
 
       // Console.WriteLine("letterArray");// properties, methods, etc. will go here.
       // return String;
