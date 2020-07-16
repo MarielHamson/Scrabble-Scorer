@@ -1,9 +1,9 @@
-using ProjectName.Models;
+using ScrabbleScorer.Models;
 using System;
 using System.Collections.Generic;
 
 
-namespace ProjectName
+namespace ScrabbleScorer
 {
   public class Program
   {

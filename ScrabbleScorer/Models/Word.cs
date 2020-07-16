@@ -1,6 +1,6 @@
-namespace ProjectName.Models
+namespace ScrabbleScorer.Models
 {
-  public class ClassName
+  public class Word
   {
 
     // properties, methods, etc. will go here.
